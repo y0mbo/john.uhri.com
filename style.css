@@ -1,135 +1,229 @@
 html {
-			font-size: 16px;
-		}
-		body {
-			font-family: Helvetica, Arial, sans-serif;
-			font-size: 62.5%;
-		}
-        div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
-        {
-			margin: 0;
-            padding: 0;
-            border: 0;
-            vertical-align: center;
-            background: transparent;
-        }
-		p, span {
-			font-size: 1.5em;
-			line-height: 2.0em;
-		}
-		li {
-			font-size: 1.5em;
-		}
-		h1 {
-			color: #3080c2;
-			font-size: 4.0em;
-			line-height: 2.0em;
-		}
-		h2 {
-			font-size: 2.0em;
-			line-height: 1.5em;
-			color: #6CA9DB; 
-		}
-		a, a:link, a:visited, a:active {
-			color: #2c77b5;
-			text-decoration: none;
-		}
-		a:hover {
-			color: #6CA9DB;
-			text-decoration: underline;
-		}
-		li {
-			line-height: 1.2em;
-			list-style-type: none;
-			
-		}
-		/*
-		li:before {
-			content: '- ';
-		}
-		*/
-		ul.inline, ul.inline li {
-			display: inline;
-			line-height: 2.0em;
-			margin: 0;
-			padding: 0;
-		}
-		ul.inline li:before {
-			content: '';
-		}
-		ul.inline li:after {
-			content: ', ';
-		}
-		ul.inline li.last:after {
-			content: '';
-		}
-		.wrapper {
-            margin: 1em auto 1.5em auto;
-            width: 980px;
-            padding: 0;
-            overflow: hidden;
-            position: relative;
-        }
-		.fr { 
-			float: right; 
-		}
-		.col-full {
-            width: 100%;
-            float: left;
-        }
-        .col-left { 
-			width: 25%; 
-			float: left; 
-		}
-        .col-right {
-            width: 75%;
-            float: right;
-        }
-        .col-full + .col-full, .col-right + .col-right {
-            border-top: 1px solid #95c1e5;
-            margin-top: 1em;
-            padding-top: 1em;
-        }
-		.avoid-break {
-            page-break-inside: avoid;
-        }
-		.name {
-            float: left;
-        }
-		.personal_info {
-			display: block;
-			float: right;
-			font-size: 0.8em;
-			line-height: 0.8em;
-			margin-top: 2.0em;
-            text-align: right;
-        }
-		.personal_info span {
-			line-height: 1.2em;
-		}
-		.address, .phone, .email, .website { 
-			display: block;
-		}
-		.dates { 
-			color: #666;
-			display: inline-block;
+}
+body {
+  background-color: #f4f4f4;
+  font-family: 'Average Sans', sans-serif;
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: center;
+}
+/* some color stuff  */
+a, a:link, a:visited, a:hover, a:active {
+  color: #478cc6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.company, .degree, .title, .university {
+  font-weight: bold;
+}
+.dates { 
+			color: #4c5156;
 			font-style: italic;
 		}
-		.degree, .link, .title {
-			font-weight: bold;
-		}
-		.degree:after, .title:after {
-			content: ' - ';
-		}
-		
-		#about .meta {
-			float: left;
-			width: 200px;
-		}
-		#about .description {
-			float: left;
-			width: 530px;
-		}
-		.no-after:after {
-			content: '';
-		}
+h1, h2, h3, h4, h5, h6 {
+  color: #0057a8;
+}
+h2 {
+  color: #4c5156;
+}
+li {
+  content: '';
+}
+ul {
+  list-style-type: none;
+}
+ul.inline, ul.inline li {
+  display: inline;
+}
+  
+ul.inline li:before {
+  content: '';
+}
+ul.inline li:after {
+  content: ', ';
+}
+ul.inline li.last:after {
+  content: '';
+}
+.avoid-break {
+  page-break-inside: avoid;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+  .col-full + .col-full {
+    border-top: 1px solid #87c0ea;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  h1 > .hideNarrow, .role > .hideNarrow {
+    display: none;
+  }
+  h1 > .name, h1 > .role  {
+    display: block;
+  }
+  h1 > .name {
+    background-color: #87c0ea;
+    border-bottom: 1px solid rgba(71, 140, 198, 1);
+    color: #fff;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    text-shadow: 1px 1px 1px rgba(0, 87, 168, 1); 
+  }
+  h1 > .role {
+    font-size: 2.0625rem;
+  }
+  #personal_info {
+    text-align: center;
+  }
+  #wrapper {
+    padding: 10px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+  body {
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+  body {
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+  body {
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+  body {
+  }
+  .col-full {
+    float: left;
+    width: 100%;
+  }
+  .col-left { 
+    float: left; 
+    width: 25%; 
+  }
+  .col-right {
+    float: right;
+    width: 75%;
+  }
+  .col-full + .col-full, .col-right + .col-right {
+    border-top: 1px solid #87c0ea;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  .col-left h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .company, .site, .title, .university {
+    float: left;
+  }
+  .dates {
+    float: right;
+    margin-right: .1rem;
+  }
+  .description { 
+    clear: both;
+  }
+  /*
+  .skills li {
+    background-color: #478cc6; 
+    border-radius: .25rem;
+    color: #f4f4f4;
+    display: inline;
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin-bottom: .3rem;
+    padding: .2rem .6rem .3rem;
+    white-space: nowrap; 
+  }
+  */
+  #name  {
+    float: left;
+  }
+  #personal_info {
+    float: right;
+  }
+  #wrapper {
+    margin: 1rem auto 1.5rem auto;
+    width: 840px; 
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+@media print {
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .dates {
+    color: #333; 
+    font-style: italic;
+  }
+}
