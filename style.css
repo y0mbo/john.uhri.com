@@ -1,9 +1,7 @@
 html {
 }
 body {
-  background-color: #f4f4f4;
   font-family: 'Average Sans', sans-serif;
-
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
@@ -49,29 +47,6 @@ ul.inline, ul.inline li {
 ul.inline li:before {
   content: '';
 }
-ul.inline li:after {
-  content: ', ';
-}
-ul.inline li.last:after {
-  content: '';
-}
-.avoid-break {
-  page-break-inside: avoid;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-/* Styles */
-}
-
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
@@ -90,6 +65,7 @@ and (max-width : 320px) {
   h1 > .name, h1 > .role  {
     display: block;
   }
+/*
   h1 > .name {
     background-color: #87c0ea;
     border-bottom: 1px solid rgba(71, 140, 198, 1);
@@ -98,43 +74,46 @@ and (max-width : 320px) {
     padding-top: 1.5rem;
     text-shadow: 1px 1px 1px rgba(0, 87, 168, 1); 
   }
+*/
   h1 > .role {
     font-size: 2.0625rem;
   }
   #personal_info {
     text-align: center;
   }
-  #wrapper {
-    padding: 10px;
-  }
 }
 
-/* iPads (portrait and landscape) ----------- */
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-  body {
-  }
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+
 }
 
-/* iPads (landscape) ----------- */
+/* Portrait */
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) { 
   body {
+    background-color: green;
   }
+  h1 {color: #fc0; }
 }
 
-/* iPads (portrait) ----------- */
+/* Landscape */
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) { 
+
   body {
+    background-color: orange;
   }
 }
 
@@ -143,6 +122,9 @@ and (orientation : portrait) {
 and (min-width : 1224px) {
 /* Styles */
   body {
+    margin: 0 auto;
+    max-width: 760px;
+    padding: 1.5rem;
   }
   .col-full {
     float: left;
@@ -150,16 +132,18 @@ and (min-width : 1224px) {
   }
   .col-left { 
     float: left; 
+    padding-top: 1.5rem;
     width: 25%; 
   }
   .col-right {
     float: right;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
     width: 75%;
   }
   .col-full + .col-full, .col-right + .col-right {
     border-top: 1px solid #87c0ea;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
+    margin: -1px 0 0;
   }
   .col-left h2 {
     margin-bottom: 0;
@@ -196,34 +180,8 @@ and (min-width : 1224px) {
     float: right;
   }
   #wrapper {
-    margin: 1rem auto 1.5rem auto;
-    width: 840px; 
     padding: 0;
     overflow: hidden;
     position: relative;
-  }
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}
-@media print {
-  a {
-    color: #000;
-    text-decoration: underline;
-  }
-
-  .dates {
-    color: #333; 
-    font-style: italic;
   }
 }
