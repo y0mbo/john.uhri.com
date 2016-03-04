@@ -23,7 +23,7 @@ a, a:link, a:visited, a:hover, a:active {
 a:hover {
   text-decoration: underline;
 }
-.company, .degree, .title, .university {
+.company, .degree, .university {
   font-weight: bold;
 }
 .dates { 
@@ -165,7 +165,7 @@ and (min-width : 1224px) {
     margin-bottom: 0;
     margin-top: 0;
   }
-  .company, .site, .title, .university {
+  .company, .site, .university {
     float: left;
   }
   .dates {
