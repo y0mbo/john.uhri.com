@@ -99,10 +99,6 @@ and (min-device-width: 375px)
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) { 
-  body {
-    background-color: green;
-  }
-  h1 {color: #fc0; }
 }
 
 /* Landscape */
@@ -111,10 +107,6 @@ and (min-device-width: 375px)
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) { 
-
-  body {
-    background-color: orange;
-  }
 }
 
 /* Desktops and laptops ----------- */
