@@ -1,11 +1,13 @@
 html {
 }
+/* fonts */
 body {
   font-family: 'Average Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
 }
+/* resets */
 div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   background: transparent;
   border: 0;
@@ -13,7 +15,7 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   padding: 0;
   vertical-align: center;
 }
-/* some color stuff  */
+/* colors and decor */
 a, a:link, a:visited, a:hover, a:active {
   color: #478cc6;
   text-decoration: none;
@@ -34,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   color: #4c5156;
 }
+/* lists */
 li {
   content: '';
 }
@@ -47,40 +50,50 @@ ul.inline, ul.inline li {
 ul.inline li:before {
   content: '';
 }
+ul.inline li:after {
+  content: ', ';
+}
+ul.inline li.last:after {
+  content: '';
+}
+#personal_info {
+  padding-bottom: 1.5rem;
+}
 /* Smartphones (portrait) ----------- */
+/* iPhone 5 */
 @media only screen 
 and (max-width : 320px) {
-/* Styles */
   .col-full + .col-full {
     border-top: 1px solid #87c0ea;
-    margin-top: 1.5rem;
+    margin: -1px 0 0;
+  }
+  .col-full {
     padding-top: 1.5rem;
   }
-  h1, h2 {
+  .col-right {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  h1, h2, h3, .company, .dates {
     text-align: center;
   }
   h1 > .hideNarrow, .role > .hideNarrow {
     display: none;
   }
-  h1 > .name, h1 > .role  {
+  h1 > .name, h1 > .role, .company, .dates  {
     display: block;
   }
-/*
-  h1 > .name {
-    background-color: #87c0ea;
-    border-bottom: 1px solid rgba(71, 140, 198, 1);
-    color: #fff;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-    text-shadow: 1px 1px 1px rgba(0, 87, 168, 1); 
-  }
-*/
   h1 > .role {
     font-size: 2.0625rem;
   }
-  #personal_info {
+  #skill-list, #personal_info {
     text-align: center;
   }
+  #online > li > .name, #online > li > a {
+    display: block;
+    text-align: center;
+  }
+
 }
 
 /* ----------- iPhone 6 ----------- */
@@ -115,7 +128,7 @@ and (min-width : 1224px) {
 /* Styles */
   body {
     margin: 0 auto;
-    max-width: 760px;
+    max-width: 860px;
     padding: 1.5rem;
   }
   .col-full {
@@ -124,6 +137,7 @@ and (min-width : 1224px) {
   }
   .col-left { 
     float: left; 
+    padding-bottom: 1.5rem;
     padding-top: 1.5rem;
     width: 25%; 
   }
@@ -146,7 +160,6 @@ and (min-width : 1224px) {
   }
   .dates {
     float: right;
-    margin-right: .1rem;
   }
   .description { 
     clear: both;
@@ -168,12 +181,10 @@ and (min-width : 1224px) {
   #name  {
     float: left;
   }
+  #online > li > .name:after {
+    content: ': ';
+  }
   #personal_info {
     float: right;
-  }
-  #wrapper {
-    padding: 0;
-    overflow: hidden;
-    position: relative;
   }
 }
