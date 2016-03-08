@@ -103,6 +103,9 @@ and (max-width : 320px) {
 and (min-device-width: 375px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
+  body {
+    background-color: #ccc;
+  }
 
 }
 
@@ -110,8 +113,42 @@ and (-webkit-min-device-pixel-ratio: 2) {
 @media only screen 
 and (min-device-width: 375px) 
 and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) { 
+and (orientation: portrait)  
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    background-color: green;
+  }
+  .col-full + .col-full {
+    border-top: 1px solid #87c0ea;
+    margin: -1px 0 0;
+  }
+  .col-full {
+    padding-top: 1.5rem;
+  }
+  .col-right {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  h1, h2, h3, .company, .dates {
+    text-align: center;
+  }
+  h1 > .hideNarrow, .role > .hideNarrow {
+    display: none;
+  }
+  h1 > .name, h1 > .role, .company, .dates  {
+    display: block;
+  }
+  h1 > .role {
+    font-size: 2.0625rem;
+  }
+  #skill-list, #personal_info {
+    text-align: center;
+  }
+  #online > li > .name, #online > li > a {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* Landscape */
@@ -122,6 +159,7 @@ and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) { 
 }
 
+/* small window on a screen */
 @media only screen
 and (min-width: 600px)
 and (max-width: 690px) {
@@ -129,6 +167,7 @@ and (max-width: 690px) {
     display: none;
   }
 }
+/* small window on a screen */
 @media only screen
 and (min-width: 600px)
 and (max-width: 879px) {
