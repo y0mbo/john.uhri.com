@@ -122,9 +122,70 @@ and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) { 
 }
 
+@media only screen
+and (min-width: 600px)
+and (max-width: 690px) {
+  .role .hideNarrow {
+    display: none;
+  }
+}
+@media only screen
+and (min-width: 600px)
+and (max-width: 879px) {
+
+  body {
+    margin: 0 auto;
+    max-width: 620px;
+    padding: 1.5rem;
+  }
+  .col-left { 
+    padding-top: 1.5rem;
+  }
+  .col-right {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  .col-left + .col-right {
+    padding-top: 0;
+  }
+  .col-full + .col-full, .col-right + .col-right {
+    border-top: 1px solid #87c0ea;
+    margin: -1px 0 0;
+  }
+  .company, .site, .university {
+    float: left;
+  }
+  .dates {
+    float: right;
+  }
+  .description {
+    clear: both;
+  }
+  #name  {
+    text-align: center;
+  }
+  #online > li > .name:after {
+    content: ': ';
+  }
+  #personal_info div {
+    float: left;
+    width: 33%;
+  }
+  #personal_info .phone {
+    text-align: center;
+  }
+  #personal_info .website {
+    text-align: right;
+  }
+  #header {
+    padding-bottom: 1.5rem;
+    display: block;
+  }
+}
+
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1224px) {
+and (min-width : 880px) {
 /* Styles */
   body {
     margin: 0 auto;
@@ -139,13 +200,13 @@ and (min-width : 1224px) {
     float: left; 
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
-    width: 25%; 
+    width: 20%; 
   }
   .col-right {
     float: right;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
-    width: 75%;
+    width: 80%;
   }
   .col-full + .col-full, .col-right + .col-right {
     border-top: 1px solid #87c0ea;
@@ -187,4 +248,7 @@ and (min-width : 1224px) {
   #personal_info {
     float: right;
   }
+}
+@media only print {
+
 }
