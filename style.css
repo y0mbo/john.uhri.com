@@ -24,7 +24,7 @@ a:hover {
   text-decoration: underline;
 }
 .company, .degree, .university {
-  font-weight: bold;
+  font-weight: 700;
 }
 .dates { 
 			color: #4c5156;
@@ -104,7 +104,6 @@ and (min-device-width: 375px)
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
   body {
-    background-color: #ccc;
   }
 
 }
@@ -117,7 +116,6 @@ and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
 
   body {
-    background-color: green;
   }
   .col-full + .col-full {
     border-top: 1px solid #87c0ea;
@@ -225,7 +223,6 @@ and (max-width: 879px) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 880px) {
-/* Styles */
   body {
     margin: 0 auto;
     max-width: 860px;
@@ -289,5 +286,106 @@ and (min-width : 880px) {
   }
 }
 @media only print {
-
+  /* adjusted gridlover css for printing */
+  body {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+  h1 {
+    font-size: 2.0625rem;
+    line-height: 2.25rem;
+    margin-bottom: 0rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem;
+  }
+  h3 {
+    font-size: 1.0625rem;
+    line-height: 1.125rem;
+    margin-top: 1.125rem;
+    margin-bottom: 0rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    margin-top: 1.125rem;
+    margin-bottom: 0rem;
+  }
+  h5 {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    margin-top: 1.125rem;
+    margin-bottom: 0rem;
+  }
+  p, ul, ol, pre, table, blockquote {
+    margin-top: 0rem;
+    margin-bottom: 1.125rem;
+  }
+  /* regular css */
+  body {
+    margin: 0 auto;
+  }
+  .col-full {
+    float: left;
+    width: 100%;
+  }
+  .col-left { 
+    float: left; 
+    padding-top: 1.125rem;
+    width: 20%; 
+  }
+  .col-right {
+    float: right;
+    width: 80%;
+  }
+  .col-full + .col-full, .col-right + .col-right {
+    border-top: 1px solid #87c0ea;
+    margin: -1px 0 0;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  #skills .col-left {
+    padding-top: 0.5625rem;
+  }
+  #skills .col-right {
+    padding-bottom: 1.125rem;
+    padding-top: 1.125rem;
+  }
+  .col-left h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  /*
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+  */
+  .company, .site, .university {
+    float: left;
+  }
+  .dates {
+    float: right;
+  }
+  .description {
+    clear: both;
+  }
+  #online {
+    margin-top: 1.125rem;
+  }
+  #online > li > .name:after {
+    content: ': ';
+  }
+  #name  {
+    float: left; 
+  }
+  #personal_info {
+    float: right;
+  }
+  .company, .degree, .university {
+    font-weight: 400;
+    color: #4c5156;
+  }
 }
