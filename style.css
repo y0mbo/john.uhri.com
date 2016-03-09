@@ -104,6 +104,9 @@ and (max-width : 320px) {
   #skill-list, #personal_info {
     text-align: center;
   }
+  #skill-list {
+    vertical-align: middle;
+  }
   #online > li > .name, #online > li > a {
     display: block;
     text-align: center;
@@ -118,9 +121,9 @@ and (max-width : 320px) {
 and (min-device-width: 375px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
-  body {
+  #pdf {
+    display: none;
   }
-
 }
 
 /* Portrait */
@@ -144,9 +147,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding-top: 1.5rem;
   }
   h1, h2, h3, .company, .dates {
-    text-align: center;
   }
-  h1 > .hideNarrow, .role > .hideNarrow {
+  .role > .hideNarrow {
     display: none;
   }
   h1 > .name, h1 > .role, .company, .dates  {
@@ -162,6 +164,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     display: block;
     text-align: center;
   }
+
 }
 
 /* Landscape */
