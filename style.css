@@ -59,6 +59,21 @@ ul.inline li.last:after {
 #personal_info {
   padding-bottom: 1.5rem;
 }
+#pdf {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.button {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+    color: #f4f4f4 !important;
+    background-color: #478cc6;
+    border-color: #478cc6;
+}
 /* Smartphones (portrait) ----------- */
 /* iPhone 5 */
 @media only screen 
@@ -383,9 +398,13 @@ and (min-width : 880px) {
   }
   #personal_info {
     float: right;
+    margin-bottom: -1.125rem;
   }
   .company, .degree, .university {
     font-weight: 400;
     color: #4c5156;
+  }
+  #pdf {
+    display: none;
   }
 }
