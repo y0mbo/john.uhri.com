@@ -151,7 +151,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .role > .hideNarrow {
     display: none;
   }
-  h1 > .name, h1 > .role, .company, .dates  {
+  .company, .dates  {
     display: block;
   }
   h1 > .role {
@@ -161,8 +161,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     text-align: center;
   }
   #online > li > .name, #online > li > a {
-    display: block;
-    text-align: center;
   }
 
 }
