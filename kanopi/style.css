@@ -1,0 +1,249 @@
+/* why you peekin' at my css? */
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Average Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* resets */
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: center;
+}
+/* things I like to do in my css:
+ * As much as makes sense, alphabetize tags
+ * Definitely always alphabetize the properties.
+ * each property gets its own line.
+ * The closing bracket } is on its own line to offer a visual break
+ * Generally don't put blank lines between anything (but occasionally before comments)
+ * Plant occasional jokes
+ * */
+/* standard html elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+h1 {
+  color: #3e873d;
+  font-size: 2.9rem;
+  line-height: 2.4rem;
+}
+h2 {
+  color: #94d60a;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+h3 {
+  color: #3e873d;
+  font-size: 1.7rem;
+  line-height:2.4rem;
+  margin-top: 2.4rem;
+  margin-bottom: 0rem;
+}
+li {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #adaaaa;
+	box-shadow: none;
+  margin: -1px 40px;
+}
+ul {
+  padding-left: 3rem;
+}
+a, a:link, a:visited, a:hover, a:active {
+  color: #94d60a;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* grid background for testing purposes */
+.grid {
+  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, .3) 1px, transparent 1px);
+  background-position: left -1px;
+  background-repeat: repeat;
+  background-size: 1.5rem 1.5rem;
+}
+.grid body {
+  box-shadow: 1px 0px 0px hsla(200, 100%, 50%, .3), -1px 0px 0px hsla(200, 100%, 50%, .3);
+}
+
+/* custom classes and ids */
+.col-full + .col-full, .col-right + .col-right {
+  margin: -1px 0 0;
+}
+.col-full + .col-full {
+  border-top: 1px solid #94d60a;
+}
+#contact {
+  background: #8bc529 url("services-views-row-even.png") no-repeat scroll right top;
+  padding-bottom: 2.4rem;
+  padding-top: 2.4rem;
+}
+#content > .col-left {
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+}
+#content > .col-right {
+  float: right;
+  max-width: 660px;
+}
+.col-right {
+  padding-bottom: 2.4rem;
+}
+.col-right + .col-right {
+  border-top: 1px solid #3e873d;
+}
+#content {
+  margin: 0 auto;
+  max-width: 880px;
+}
+.company, .degree, .university {
+  float: left;
+  font-weight: 700;
+}
+#copyright {
+  background-color: #000;
+  clear: both;
+  color: #b3b7b3;
+  line-height: 2.4rem;
+  padding: 2.4rem 0;
+  text-align: center;
+}
+.dates { 
+  color: #727472;
+  float: right;
+  font-style: italic;
+}
+.description { 
+  clear: both;
+}
+#fakeform {
+  margin: 0 auto;
+  text-align: center;
+  width: 880px;
+}
+#fakeform:after {
+  clear: both;
+}
+#fakeform .row {
+  display: inline-block;
+  margin: 0 10px;
+  width: 250px;
+}
+#fakeform .label {
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+#fakeform .field {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #000;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  vertical-alignment: middle;
+  width: 248px;
+}
+#fakeform .field a {
+  color: #000;
+}
+#footer {
+  clear: both;
+}
+#footer h1 {
+  color: #fff;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+#header {
+  background-color: rgb(51, 51, 51);
+  background-image: url(header.png);
+  border-bottom: 5px solid #94d60a;
+  color: #fff;
+  height: 152px;
+  margin-bottom: 33px;
+  text-align: center;
+  vertical-align: middle;
+}
+#gravatar {
+  border: 5px solid #94d60a;
+  border-radius: 50%;
+}
+ul.inline, ul.inline li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul.inline li:before {
+  content: '';
+}
+ul.inline li:after {
+  content: ', ';
+}
+ul.inline li.last:after {
+  content: '';
+}
+ul.links li {
+  line-height: 3.6rem;
+  list-style-type: none;
+}
+/* ul.links li */ #github {
+background: url("github.png") no-repeat left center;
+padding-left: 35px;
+  }
+  /* ul.links li */ #linkedin {
+  background: url("linkedin.png") no-repeat left center;
+  padding-left: 35px;
+}
+/* ul.links li */ #twitter {
+background: url("twitter.png") no-repeat left center;
+padding-left: 35px;
+  }
+  #logo {
+    display: inline-block;
+    margin: 32px auto;
+  }
+  #name {
+    padding-top: 2.4rem;
+  }
+  #personal_info {
+    /*padding-bottom: 1.5rem; */
+  }
+  #phone {
+    background-color: rgb(76,75,75);
+    color: rgb(202, 205, 197);
+    display: block;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  #phone:before {
+    content: "CALL ";
+  }
+  #online > li > .name:after {
+    content: ': ';
+  }
+  #skills {
+    border-top: 1px solid #94d60a;
+    margin: -1px 0 0;
+  }
+  #titanic {
+    float: none;
+  }
