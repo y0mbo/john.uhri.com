@@ -23,6 +23,9 @@ a, a:link, a:visited, a:hover, a:active {
 a:hover {
   text-decoration: underline;
 }
+.benefits {
+  font-style: italic;
+}
 .company, .degree, .university {
   font-weight: 700;
 }
@@ -146,8 +149,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
   }
-  h1, h2, h3, .company, .dates {
-  }
   .role > .hideNarrow {
     display: none;
   }
@@ -252,13 +253,13 @@ and (min-width : 880px) {
     float: left; 
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
-    width: 20%; 
+    width: 22%; 
   }
   .col-right {
     float: right;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
-    width: 80%;
+    width: 78%;
   }
   .col-full + .col-full, .col-right + .col-right {
     border-top: 1px solid #87c0ea;
@@ -291,6 +292,11 @@ and (min-width : 880px) {
     white-space: nowrap; 
   }
   */
+  .meta h3 {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+  }
   #name  {
     float: left;
   }
@@ -301,8 +307,7 @@ and (min-width : 880px) {
     float: right;
   }
 }
-@media only print {
-  /* adjusted gridlover css for printing */
+/*
   body {
     font-size: 0.75rem;
     line-height: 1.125rem;
@@ -340,7 +345,6 @@ and (min-width : 880px) {
     margin-top: 0rem;
     margin-bottom: 1.125rem;
   }
-  /* regular css */
   body {
     margin: 0 auto;
   }
@@ -374,11 +378,6 @@ and (min-width : 880px) {
     margin-bottom: 0;
     margin-top: 0;
   }
-  /*
-  .avoid-break {
-    page-break-inside: avoid;
-  }
-  */
   .company, .site, .university {
     float: left;
   }
@@ -408,4 +407,4 @@ and (min-width : 880px) {
   #pdf {
     display: none;
   }
-}
+}*/
