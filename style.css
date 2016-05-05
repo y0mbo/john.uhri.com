@@ -3,6 +3,8 @@ html {
 /* fonts */
 body {
   font-family: 'Average Sans', sans-serif;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
@@ -86,33 +88,17 @@ ul.inline li.last:after {
   .dates {
     float: right;
   }
-#pdf {
-  display: block;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-.button {
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-    color: #f4f4f4 !important;
-    background-color: #478cc6;
-    border-color: #478cc6;
-}
-/* Smartphones (portrait) ----------- */
-/* iPhone 5 */
+
 @media screen 
-and (max-width : 320px) {
+and (max-width: 374px) {
   #name h1 {
     text-align: center;
   } 
-  #name .hideNarrow {
+  .hideNarrow {
     display: none;
   }
   .role {
-    display: inline-block;
+    display: block;
     font-size: 1.9375rem;
     line-height: 3rem;
   }
@@ -125,14 +111,9 @@ and (max-width : 320px) {
     content: '';
   }
 }
-
-/* ----------- iPhone 6 ----------- */
-
-/* Portrait */
-@media only screen 
-and (min-width: 321px)
-and (max-width: 667px) 
-and (orientation: portrait) {
+@media screen 
+and (min-width: 375px)
+and (max-width: 680px) {
   #name h1 {
     text-align: center;
   } 
@@ -140,12 +121,10 @@ and (orientation: portrait) {
     display: none;
   }
   .role {
-    display: inline-block;
+    clear: both;
+    display: block;
     font-size: 1.9375rem;
     line-height: 3rem;
-  }
-  .role .hideNarrow {
-    display: inline !important;
   }
   h2, .company, .dates, .link, .university  {
     display: block;
@@ -156,42 +135,32 @@ and (orientation: portrait) {
     float: none;
     text-align: center;
   }
-}
-
-/* Landscape */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) { 
-  .name {
-    color: red;
+  .description {
+    clear: both;
   }
 }
-
-/* small window on a screen */
-@media only screen
-and (min-width: 600px)
-and (max-width: 690px) {
-  .name {
-  color: orange;
-}
-}
-
-/* small window on a screen */
-@media only screen
-and (min-width: 600px)
-and (max-width: 879px) {
-
-}
-
-/* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 880px) {
+and (min-width: 500px) {
+  #employment .col-right .meta {
+    padding-bottom: 1.5rem;
+  }
+  .company, .link, .university {
+    display: block;
+    float: left;
+  }
+  .dates {
+    display: block;
+    float: right;
+  }
+  .description {
+    clear: both;
+  }
+}
+@media only screen 
+and (min-width: 880px) {
   body {
     margin: 0 auto;
     max-width: 860px;
-    padding: 1.5rem;
   }
   .col-full {
     float: left;
@@ -230,6 +199,27 @@ and (min-width : 880px) {
     float: left;
     margin-right: 10px;
   }
+}
+@media only screen and (min-width: 570px) and (max-width: 889px) {
+  #name {
+    float: none;
+    text-align: center;
+  }
+  #personal_info {
+    margin-bottom: 1.5rem;
+  }
+  #personal_info div {
+    float: left;
+    width: 33%;
+  }
+  #personal_info .phone {
+    text-align: center;
+  }
+  #personal_info .website {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 890px) {
   #name  {
     float: left;
   }
@@ -237,7 +227,7 @@ and (min-width : 880px) {
     float: right;
   }
 }
-
+/* print style sheet */
 @media print {
   #name  {
     text-align: center;
