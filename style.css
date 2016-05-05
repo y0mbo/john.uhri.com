@@ -62,6 +62,30 @@ ul.inline li.last:after {
 #personal_info {
   padding-bottom: 1.5rem;
 }
+  .col-left { 
+    padding-top: 1.5rem;
+  }
+  .col-right {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  .col-left + .col-right {
+    padding-top: 0;
+  }
+  .col-full + .col-full {
+    border-top: 1px solid #87c0ea;
+    margin: -1px 0 0;
+  }
+  .col-right + .col-right {
+    border-top: 1px solid #d3e8f7;
+    margin: -1px 0 0;
+  }
+  #online > li > .name:after {
+    content: ': ';
+  }
+  .dates {
+    float: right;
+  }
 #pdf {
   display: block;
   position: absolute;
@@ -79,91 +103,59 @@ ul.inline li.last:after {
 }
 /* Smartphones (portrait) ----------- */
 /* iPhone 5 */
-@media only screen 
+@media screen 
 and (max-width : 320px) {
-  .col-full + .col-full {
-    border-top: 1px solid #87c0ea;
-    margin: -1px 0 0;
-  }
-  .col-full {
-    padding-top: 1.5rem;
-  }
-  .col-right {
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-  }
-  h1, h2, h3, .company, .dates {
+  #name h1 {
     text-align: center;
-  }
-  h1 > .hideNarrow, .role > .hideNarrow {
+  } 
+  #name .hideNarrow {
     display: none;
   }
-  h1 > .name, h1 > .role, .company, .dates  {
+  .role {
+    display: inline-block;
+    font-size: 1.9375rem;
+    line-height: 3rem;
+  }
+  #personal_info, h2, .meta h3, .company, .dates, .link, .university, #online li .name, #online li a  {
     display: block;
-  }
-  h1 > .role {
-    font-size: 2.0625rem;
-  }
-  #skill-list, #personal_info {
+    float: none;
     text-align: center;
   }
-  #skill-list {
-    vertical-align: middle;
+  #online > li .name:after {
+    content: '';
   }
-  #online > li > .name, #online > li > a {
-    display: block;
-    text-align: center;
-  }
-
 }
 
 /* ----------- iPhone 6 ----------- */
 
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2) { 
-  #pdf {
-    display: none;
-  }
-}
-
 /* Portrait */
 @media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (orientation: portrait)  
-and (-webkit-min-device-pixel-ratio: 2) {
-
-  body {
-  }
-  .col-full + .col-full {
-    border-top: 1px solid #87c0ea;
-    margin: -1px 0 0;
-  }
-  .col-full {
-    padding-top: 1.5rem;
-  }
-  .col-right {
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-  }
-  .role > .hideNarrow {
+and (min-width: 321px)
+and (max-width: 667px) 
+and (orientation: portrait) {
+  #name h1 {
+    text-align: center;
+  } 
+  #name .hideNarrow {
     display: none;
   }
-  .company, .dates  {
+  .role {
+    display: inline-block;
+    font-size: 1.9375rem;
+    line-height: 3rem;
+  }
+  .role .hideNarrow {
+    display: inline !important;
+  }
+  h2, .company, .dates, .link, .university  {
     display: block;
+    float: none;
   }
-  h1 > .role {
-    font-size: 2.0625rem;
-  }
-  #skill-list, #personal_info {
+  #personal_info {
+    display: block;
+    float: none;
     text-align: center;
   }
-  #online > li > .name, #online > li > a {
-  }
-
 }
 
 /* Landscape */
@@ -172,69 +164,25 @@ and (min-device-width: 375px)
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) { 
+  .name {
+    color: red;
+  }
 }
 
 /* small window on a screen */
 @media only screen
 and (min-width: 600px)
 and (max-width: 690px) {
-  .role .hideNarrow {
-    display: none;
-  }
+  .name {
+  color: orange;
 }
+}
+
 /* small window on a screen */
 @media only screen
 and (min-width: 600px)
 and (max-width: 879px) {
 
-  body {
-    margin: 0 auto;
-    max-width: 620px;
-    padding: 1.5rem;
-  }
-  .col-left { 
-    padding-top: 1.5rem;
-  }
-  .col-right {
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-  }
-  .col-left + .col-right {
-    padding-top: 0;
-  }
-  .col-full + .col-full, .col-right + .col-right {
-    border-top: 1px solid #87c0ea;
-    margin: -1px 0 0;
-  }
-  .company, .site, .university {
-    float: left;
-  }
-  .dates {
-    float: right;
-  }
-  .description {
-    clear: both;
-  }
-  #name  {
-    text-align: center;
-  }
-  #online > li > .name:after {
-    content: ': ';
-  }
-  #personal_info div {
-    float: left;
-    width: 33%;
-  }
-  #personal_info .phone {
-    text-align: center;
-  }
-  #personal_info .website {
-    text-align: right;
-  }
-  #header {
-    padding-bottom: 1.5rem;
-    display: block;
-  }
 }
 
 /* Desktops and laptops ----------- */
@@ -261,37 +209,22 @@ and (min-width : 880px) {
     padding-top: 1.5rem;
     width: 78%;
   }
-  .col-full + .col-full, .col-right + .col-right {
-    border-top: 1px solid #87c0ea;
-    margin: -1px 0 0;
-  }
   .col-left h2 {
     margin-bottom: 0;
     margin-top: 0;
   }
-  .company, .site, .university {
-    float: left;
+  .col-left + .col-right {
+    padding-top: 1.5rem;
   }
-  .dates {
-    float: right;
+  .col-right + .col-right {
+    border-top: 1px solid #87c0ea;
+  }
+  .company, .link, .university {
+    float: left;
   }
   .description { 
     clear: both;
   }
-  /*
-  .skills li {
-    background-color: #478cc6; 
-    border-radius: .25rem;
-    color: #f4f4f4;
-    display: inline;
-    font-size: .8rem;
-    font-weight: 600;
-    line-height: 1.75rem;
-    margin-bottom: .3rem;
-    padding: .2rem .6rem .3rem;
-    white-space: nowrap; 
-  }
-  */
   .meta h3 {
     display: inline-block;
     float: left;
@@ -300,111 +233,68 @@ and (min-width : 880px) {
   #name  {
     float: left;
   }
-  #online > li > .name:after {
-    content: ': ';
-  }
   #personal_info {
     float: right;
   }
 }
-/*
-  body {
-    font-size: 0.75rem;
-    line-height: 1.125rem;
+
+@media print {
+  #name  {
+    text-align: center;
   }
-  h1 {
-    font-size: 2.0625rem;
-    line-height: 2.25rem;
-    margin-bottom: 0rem;
+  #name h1 .name {
+    font-size: 1.9375rem;
+    line-height: 3rem;
   }
-  h2 {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-    margin-top: 1.125rem;
-    margin-bottom: 1.125rem;
+  #name h1 .hideNarrow {
+    display: none;
   }
-  h3 {
-    font-size: 1.0625rem;
-    line-height: 1.125rem;
-    margin-top: 1.125rem;
-    margin-bottom: 0rem;
-  }
-  h4 {
-    font-size: 0.75rem;
-    line-height: 1.125rem;
-    margin-top: 1.125rem;
-    margin-bottom: 0rem;
-  }
-  h5 {
-    font-size: 0.75rem;
-    line-height: 1.125rem;
-    margin-top: 1.125rem;
-    margin-bottom: 0rem;
-  }
-  p, ul, ol, pre, table, blockquote {
-    margin-top: 0rem;
-    margin-bottom: 1.125rem;
-  }
-  body {
-    margin: 0 auto;
-  }
-  .col-full {
-    float: left;
-    width: 100%;
-  }
-  .col-left { 
-    float: left; 
-    padding-top: 1.125rem;
-    width: 20%; 
-  }
-  .col-right {
-    float: right;
-    width: 80%;
-  }
-  .col-full + .col-full, .col-right + .col-right {
-    border-top: 1px solid #87c0ea;
-    margin: -1px 0 0;
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-  #skills .col-left {
-    padding-top: 0.5625rem;
-  }
-  #skills .col-right {
-    padding-bottom: 1.125rem;
-    padding-top: 1.125rem;
-  }
-  .col-left h2 {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  .company, .site, .university {
-    float: left;
-  }
-  .dates {
-    float: right;
-  }
-  .description {
+  #name .role {
     clear: both;
+    display: block;
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    margin-bottom: 0rem;
   }
-  #online {
-    margin-top: 1.125rem;
+  #name .role .hideNarrow {
+    display: inline;
   }
   #online > li > .name:after {
     content: ': ';
   }
-  #name  {
-    float: left; 
+  #personal_info div {
+    float: left;
+    width: 33%;
   }
-  #personal_info {
-    float: right;
-    margin-bottom: -1.125rem;
+  #personal_info .phone {
+    text-align: center;
   }
-  .company, .degree, .university {
-    font-weight: 400;
-    color: #4c5156;
+  #personal_info .website {
+    text-align: right;
   }
-  #pdf {
-    display: none;
+  #header {
+    padding-bottom: 1.5rem;
+    display: block;
   }
-}*/
+  #employment {
+    margin-bottom: 1.5rem;
+  }
+  #employment h3 {
+    display: inline;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #employment .col-right {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  #employment .col-right + .col-right {
+    border-top: none;
+    margin: 0;
+  }
+  .company, .degree, .link, .university {
+    font-weight: 500;
+  }
+}
