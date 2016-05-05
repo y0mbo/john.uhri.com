@@ -227,7 +227,6 @@ and (min-width: 880px) {
     float: right;
   }
 }
-/* print style sheet */
 @media print {
   #name  {
     text-align: center;
