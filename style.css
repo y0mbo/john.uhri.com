@@ -9,6 +9,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
+ /*font-family: 'Arial Narrow', sans-serif;*/
 }
 /* resets */
 div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
@@ -64,7 +65,7 @@ ul.inline li.last:after {
   content: '';
 }
 #personal_info {
-  padding-bottom: 1.5rem;
+  /*padding-bottom: 1.5rem;*/
 }
   .col-left { 
     padding-top: 1.5rem;
@@ -100,11 +101,24 @@ ul.inline li.last:after {
     font-size: 1.9375rem;
     line-height: 3rem;
   }
- #name h2 {
-  margin-top: 1.5rem;
+
+
+  .header, .header-space{
+  height: 80px;
+}
+.header {
+  position: fixed;
+  top: 0;
 }
 @media screen {
-
+   #name h2 {
+  margin-top: 1.5rem;
+}
+.header {
+  background-color: #fff;
+  padding-top: 1.5rem;
+  width: 860px;
+}
 }
 @media screen 
 and (max-width: 374px) {
@@ -249,14 +263,29 @@ and (min-width: 880px) {
 }
 
 @media print {
-    #name  {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+   font-family: 'Arial Narrow', sans-serif;
+  }
+  .header {
+    width: 700px;
+  }
+  #name  {
     float: left;
   }
   #personal_info {
     float: right;
   }
   #experience h2, #employment h2, #education h2, #elsewhere h2 {display:none;}
+
   .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+  #elsewhere {display:none; }
+  #experience {margin-top: -6rem;}
+  
+  li { page-break-inside: avoid; }
  /* 
   #personal_info  {
     float: right;
