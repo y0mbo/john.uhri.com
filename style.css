@@ -3,6 +3,7 @@ html {
 /* fonts */
 body {
   font-family: 'Average Sans', sans-serif;
+  line-height: 1.5rem;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
 }
@@ -44,9 +45,10 @@ h2 {
 /* lists */
 li {
   content: '';
+  margin-left:20px;
 }
 ul {
-  list-style-type: none;
+  /*list-style-type: none;*/
 }
 ul.inline, ul.inline li {
   display: inline;
@@ -88,7 +90,22 @@ ul.inline li.last:after {
   .dates {
     float: right;
   }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  .role {
+    display: block;
+    font-size: 1.9375rem;
+    line-height: 3rem;
+  }
+ #name h2 {
+  margin-top: 1.5rem;
+}
+@media screen {
 
+}
 @media screen 
 and (max-width: 374px) {
   #name h1 {
@@ -111,6 +128,9 @@ and (max-width: 374px) {
     content: '';
   }
 }
+ .col-right + .col-right {
+    border-top: 1px solid #87c0ea;
+  }
 @media screen 
 and (min-width: 375px)
 and (max-width: 680px) {
@@ -227,7 +247,21 @@ and (min-width: 880px) {
     float: right;
   }
 }
+
 @media print {
+    #name  {
+    float: left;
+  }
+  #personal_info {
+    float: right;
+  }
+  #experience h2, #employment h2, #education h2, #elsewhere h2 {display:none;}
+  .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+ /* 
+  #personal_info  {
+    float: right;
+    width: 33%;
+  }
   #name  {
     text-align: center;
   }
@@ -251,16 +285,14 @@ and (min-width: 880px) {
   #online > li > .name:after {
     content: ': ';
   }
-  #personal_info div {
-    float: left;
-    width: 33%;
-  }
+  
   #personal_info .phone {
     text-align: center;
   }
   #personal_info .website {
     text-align: right;
   }
+  
   #header {
     padding-bottom: 1.5rem;
     display: block;
@@ -286,4 +318,5 @@ and (min-width: 880px) {
   .company, .degree, .link, .university {
     font-weight: 500;
   }
+*/
 }
