@@ -9,7 +9,6 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
- /*font-family: 'Arial Narrow', sans-serif;*/
 }
 /* resets */
 div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
@@ -48,9 +47,6 @@ li {
   content: '';
   margin-left:20px;
 }
-ul {
-  /*list-style-type: none;*/
-}
 ul.inline, ul.inline li {
   display: inline;
 }
@@ -63,9 +59,6 @@ ul.inline li:after {
 }
 ul.inline li.last:after {
   content: '';
-}
-#personal_info {
-  /*padding-bottom: 1.5rem;*/
 }
   .col-left { 
     padding-top: 1.5rem;
@@ -286,66 +279,4 @@ and (min-width: 880px) {
   #experience {margin-top: -6rem;}
   
   li { page-break-inside: avoid; }
- /* 
-  #personal_info  {
-    float: right;
-    width: 33%;
-  }
-  #name  {
-    text-align: center;
-  }
-  #name h1 .name {
-    font-size: 1.9375rem;
-    line-height: 3rem;
-  }
-  #name h1 .hideNarrow {
-    display: none;
-  }
-  #name .role {
-    clear: both;
-    display: block;
-    font-size: 1.375rem;
-    line-height: 1.5rem;
-    margin-bottom: 0rem;
-  }
-  #name .role .hideNarrow {
-    display: inline;
-  }
-  #online > li > .name:after {
-    content: ': ';
-  }
-  
-  #personal_info .phone {
-    text-align: center;
-  }
-  #personal_info .website {
-    text-align: right;
-  }
-  
-  #header {
-    padding-bottom: 1.5rem;
-    display: block;
-  }
-  #employment {
-    margin-bottom: 1.5rem;
-  }
-  #employment h3 {
-    display: inline;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  #employment .col-right {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-  #employment .col-right + .col-right {
-    border-top: none;
-    margin: 0;
-  }
-  .company, .degree, .link, .university {
-    font-weight: 500;
-  }
-*/
 }
