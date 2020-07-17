@@ -74,7 +74,7 @@ ul.inline li.last:after {
     border-top: 1px solid #87c0ea;
     margin: -1px 0 0;
   }
-  .col-right + .col-right {
+  .col-right + .col-right{
     border-top: 1px solid #d3e8f7;
     margin: -1px 0 0;
   }
@@ -135,7 +135,8 @@ and (max-width: 374px) {
     content: '';
   }
 }
- .col-right + .col-right {
+ .col-right + .col-right,
+  .pagebreak + .col-right  {
     border-top: 1px solid #87c0ea;
   }
 @media screen 
@@ -255,6 +256,8 @@ and (min-width: 880px) {
   }
 }
 
+.pagebreak { display: none;}
+
 @media print {
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -263,9 +266,15 @@ and (min-width: 880px) {
   h1, h2, h3, h4, h5, h6 {
    font-family: 'Arial Narrow', sans-serif;
   }
+  header {
+    position: fixed;
+    top: 0;
+    height: 200px;
+  }
   .header {
     width: 700px;
   }
+  main {margin-top: 200px;}
   #name  {
     float: left;
   }
@@ -274,7 +283,8 @@ and (min-width: 880px) {
   }
   #experience h2, #employment h2, #education h2, #elsewhere h2 {display:none;}
 
-  .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+  .pagebreak { page-break-before: always !important; } /* page-break-after works, as well */
+  
   #elsewhere {display:none; }
   #experience {margin-top: -6rem;}
   
