@@ -1,30 +1,29 @@
 John Uhri
 772 Waters Edge Dr, South Elgin, IL 60177, 920-540-5490, john@uhri.com
 
-
-
 May 2019 - Jun 2020: Web and Application Development Manager, Red Caffeine
-[Responsible for] 
-
+Janet Viane
 
 Aug 2018 - May 2019: IT Manager, iD Commerce + Logistics
-[Responsible for] 
+Mark Pell
+
 
 Jan 2017 - Aug 2018: Senior Software Developer, iD Commerce + Logistics
-[Responsible for] 
-Manage IT 
+Jolanta Pomiotlo
+ 
 
 Aug 2006 - Present: Owner and Software Developer, Red Bit Blue Bit
-[Responsible for] 
+
 
 Oct 2002 - Aug 2006: Lead Design Architect, Avastone Technologies (previously Heartland Business Systems)
-[Responsible for] 
+Chris Jannsen
 
 Sep 1999 - Oct 2002: Consultant; Software Developer and Team Lead, Stratagem
-[Responsible for] 
+Jim Day
 
 Aug 1995 - Sep 1999: Business Systems Analyst, Auto Glass Specialists
-[Responsible for] 
+Gerry Sphatt
+Randy Sykes
 
 
 BS Business Administration - Management Information Systems emphasis, Computer science minor, University of Wisconsin - Lacrosse, 1995
