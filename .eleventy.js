@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("**/*.pdf");
+  eleventyConfig.addPassthroughCopy("*.pdf");
 };
