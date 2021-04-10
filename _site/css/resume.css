@@ -1,0 +1,292 @@
+html {
+}
+/* fonts */
+body {
+  font-family: 'Average Sans', sans-serif;
+  line-height: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+/* resets */
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: center;
+}
+/* colors and decor */
+a, a:link, a:visited, a:hover, a:active {
+  color: #478cc6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.benefits {
+  font-style: italic;
+}
+.company, .degree, .university {
+  font-weight: 700;
+}
+.dates { 
+			color: #4c5156;
+			font-style: italic;
+		}
+h1, h2, h3, h4, h5, h6 {
+  color: #0057a8;
+}
+h2 {
+  color: #4c5156;
+}
+/* lists */
+li {
+  content: '';
+  margin-left:20px;
+}
+ul.inline, ul.inline li {
+  display: inline;
+}
+  
+ul.inline li:before {
+  content: '';
+}
+ul.inline li:after {
+  content: ', ';
+}
+ul.inline li.last:after {
+  content: '';
+}
+  .col-left { 
+    padding-top: 1.5rem;
+  }
+  .col-right {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  .col-left + .col-right {
+    padding-top: 0;
+  }
+  .col-full + .col-full {
+    border-top: 1px solid #87c0ea;
+    margin: -1px 0 0;
+  }
+  .col-right + .col-right{
+    border-top: 1px solid #d3e8f7;
+    margin: -1px 0 0;
+  }
+  #online > li > .name:after {
+    content: ': ';
+  }
+  .dates {
+    float: right;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  .role {
+    display: block;
+    font-size: 1.9375rem;
+    line-height: 3rem;
+  }
+
+
+  .header, .header-space{
+  height: 80px;
+}
+.header {
+  position: fixed;
+  top: 0;
+}
+@media screen {
+   #name h2 {
+  margin-top: 1.5rem;
+}
+.header {
+  background-color: #fff;
+  padding-top: 1.5rem;
+  width: 860px;
+}
+}
+@media screen 
+and (max-width: 374px) {
+  #name h1 {
+    text-align: center;
+  } 
+  .hideNarrow {
+    display: none;
+  }
+  .role {
+    display: block;
+    font-size: 1.9375rem;
+    line-height: 3rem;
+  }
+  #personal_info, h2, .meta h3, .company, .dates, .link, .university, #online li .name, #online li a  {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  #online > li .name:after {
+    content: '';
+  }
+}
+ .col-right + .col-right,
+  .pagebreak + .col-right  {
+    border-top: 1px solid #87c0ea;
+  }
+@media screen 
+and (min-width: 375px)
+and (max-width: 680px) {
+  #name h1 {
+    text-align: center;
+  } 
+  #name .hideNarrow {
+    display: none;
+  }
+  .role {
+    clear: both;
+    display: block;
+    font-size: 1.9375rem;
+    line-height: 3rem;
+  }
+  h2, .company, .dates, .link, .university  {
+    display: block;
+    float: none;
+  }
+  #personal_info {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .description {
+    clear: both;
+  }
+}
+@media only screen 
+and (min-width: 500px) {
+  #employment .col-right .meta {
+    padding-bottom: 1.5rem;
+  }
+  .company, .link, .university {
+    display: block;
+    float: left;
+  }
+  .dates {
+    display: block;
+    float: right;
+  }
+  .description {
+    clear: both;
+  }
+}
+@media only screen 
+and (min-width: 880px) {
+  body {
+    margin: 0 auto;
+    max-width: 860px;
+  }
+  .col-full {
+    float: left;
+    width: 100%;
+  }
+  .col-left { 
+    float: left; 
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    width: 22%; 
+  }
+  .col-right {
+    float: right;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    width: 78%;
+  }
+  .col-left h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .col-left + .col-right {
+    padding-top: 1.5rem;
+  }
+  .col-right + .col-right {
+    border-top: 1px solid #87c0ea;
+  }
+  .company, .link, .university {
+    float: left;
+  }
+  .description { 
+    clear: both;
+  }
+  .meta h3 {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 570px) and (max-width: 889px) {
+  #name {
+    float: none;
+    text-align: center;
+  }
+  #personal_info {
+    margin-bottom: 1.5rem;
+  }
+  #personal_info div {
+    float: left;
+    width: 33%;
+  }
+  #personal_info .phone {
+    text-align: center;
+  }
+  #personal_info .website {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 890px) {
+  #name  {
+    float: left;
+  }
+  #personal_info {
+    float: right;
+  }
+}
+
+.pagebreak { display: none;}
+
+@media print {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+   font-family: 'Arial Narrow', sans-serif;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    height: 200px;
+  }
+  .header {
+    width: 700px;
+  }
+  main {margin-top: 200px;}
+  #name  {
+    float: left;
+  }
+  #personal_info {
+    float: right;
+  }
+  #experience h2, #employment h2, #education h2, #elsewhere h2 {display:none;}
+
+  .pagebreak { page-break-before: always !important; } /* page-break-after works, as well */
+  
+  #elsewhere {display:none; }
+  #experience {margin-top: -6rem;}
+  
+  li { page-break-inside: avoid; }
+}
