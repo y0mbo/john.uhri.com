@@ -1,0 +1,420 @@
+:root {
+  --gray-50: rgb(247, 247, 247);
+  --gray-100: rgb(239, 239, 239);
+  --gray-200: rgb(223, 223, 223);
+  --gray-300: rgb(202, 202, 202);
+  --gray-400: rgb(168, 168, 168);
+  --gray-500: rgb(135, 135, 135);
+  --gray-600: rgb(109, 109, 109);
+  --gray-700: rgb(95, 95, 95);
+  --gray-800: rgb(74, 74, 74);
+  --gray-900: rgb(61, 61, 61);
+
+  
+  --blue-50: rgb(246, 246, 252);
+  --blue-100: rgb(238, 238, 249);
+  --blue-200: rgb(221, 221, 243);
+  --blue-300: rgb(198, 199, 235);
+  --blue-400: rgb(162, 163, 223);
+  --blue-500: rgb(126, 128, 210);
+  --blue-600: rgb(95, 97, 199);
+  --blue-700: rgb(79, 81, 194);
+  --blue-800: rgb(58, 60, 167);
+  --blue-900: rgb(48, 50, 138);
+
+  --green-50: rgb(235, 251, 237);
+  --green-100: rgb(215, 247, 219);
+  --green-200: rgb(176, 239, 183);
+  --green-300: rgb(107, 225, 121);
+  --green-400: rgb(39, 194, 57);
+  --green-500: rgb(32, 156, 46);
+  --green-600: rgb(26, 126, 37);
+  --green-700: rgb(22, 110, 33);
+  --green-800: rgb(17, 86, 25);
+  --green-900: rgb(14, 71, 21);
+
+  --orange-50: rgb(253, 245, 239);
+  --orange-100: rgb(251, 236, 225);
+  --orange-200: rgb(248, 218, 197);
+  --orange-300: rgb(242, 191, 154);
+  --orange-400: rgb(233, 148, 87);
+  --orange-500: rgb(214, 105, 27);
+  --orange-600: rgb(171, 84, 22);
+  --orange-700: rgb(150, 74, 19);
+  --orange-800: rgb(118, 58, 15);
+  --orange-900: rgb(97, 48, 12);
+
+  --purple-50: rgb(252, 245, 251);
+  --purple-100: rgb(248, 235, 247);
+  --purple-200: rgb(242, 215, 238);
+  --purple-300: rgb(233, 188, 227);
+  --purple-400: rgb(218, 143, 208);
+  --purple-500: rgb(202, 94, 188);
+  --purple-600: rgb(179, 59, 163);
+  --purple-700: rgb(156, 51, 142);
+  --purple-800: rgb(122, 40, 111);
+  --purple-900: rgb(101, 33, 92);
+
+  --red-50: rgb(254, 244, 246);
+  --red-100: rgb(253, 234, 237);
+  --red-200: rgb(252, 214, 220);
+  --red-300: rgb(250, 185, 195);
+  --red-400: rgb(246, 135, 152);
+  --red-500: rgb(241, 73, 98);
+  --red-600: rgb(216, 16, 46);
+  --red-700: rgb(190, 14, 41);
+  --red-800: rgb(151, 11, 32);
+  --red-900: rgb(126, 9, 27);
+
+  --teal-50: rgb(239, 248, 250);
+  --teal-100: rgb(224, 242, 245);
+  --teal-200: rgb(195, 230, 235);
+  --teal-300: rgb(152, 212, 221);
+  --teal-400: rgb(80, 182, 198);
+  --teal-500: rgb(53, 148, 163);
+  --teal-600: rgb(42, 118, 130);
+  --teal-700: rgb(37, 104, 114);
+  --teal-800: rgb(29, 81, 89);
+  --teal-900: rgb(24, 67, 74);
+}
+* {font-family: 'DM Sans', sans-serif;}
+a, a:link, a:visited, a:hover, a:active { color: var(--blue-700); text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+.section2 {
+  fill: rgba(102, 102, 255, 0.5) !important;
+}
+
+.linktype {color: var(--gray-300); text-transform: lowercase;}
+status { border-radius: 6px; color: #fff; background-color: var(--gray-300); display:inline; font-size: .75rem; font-weight: 500; padding: 2px 8px;}
+
+
+
+statusreport status.blocked {background-color: var(--red-100); border: 1px solid var(--red-200); color: var(--red-600); padding: 2px 8px;}
+
+#priorities li a { font-size: 1rem; font-weight: 600;}
+.quickLinks {top:0;}
+
+
+ul.tags {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tags li, .tags a{
+  float: left;
+  font-size: 11px;
+  height: 18px;
+  line-height: 18px;
+  position: relative;
+}
+.tags a{
+  margin-left:20px;
+  padding:0 10px 0 12px;
+  background:#0089e0;
+  color:#fff;
+  text-decoration:none;
+  border-bottom-right-radius:6px;
+  border-top-right-radius:6px;	
+} 
+.tags a:before{
+  content:"";
+  float:left;
+  position:absolute;
+  top:0;
+  left:-9px;
+  width:0;
+  height:0;
+  border-color:transparent #0089e0 transparent transparent;
+  border-style:solid;
+  border-width:9px 9px 9px 0;		
+}
+.tags a:after{
+  content:"";
+  position:absolute;
+  top:7px;
+  left:0;
+  float:left;
+  width:4px;
+  height:4px;
+  border-radius:2px;
+  background:#fff;
+  box-shadow:-1px -1px 2px #004977;
+}
+statusreport {margin-left: 1rem; margin-bottom: .5rem;}
+statusreport, statusreport description, statusreport .update {display: block;}
+statusreport .update, updates div {display:none;}
+statusreport .current {display: block;}
+statusreport date { color: var(--gray-400);}
+blocker {color: var(--red-700); font-weight: 600;}
+
+
+/* links */
+/*
+FILE FORMAT ICONS
+by Greg Schoppe (http://gschoppe.com)
+USAGE: include FontAwesome on page, as shown on http://fontawesome.io
+       then include this css file, and target links by adding the link-icon
+       class.  Note: try to avoid or manually label links to websites, as that
+       detection code is necessarily janky. when in doubt, just end all external
+       links with a trailing slash (/), a query string (?), or a link target (#)
+*/
+a.link-icon:after,
+a.link-icon.link-file[href]:after {
+    content: "\f016"; /* generic file icon */
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    width: 20px;
+    text-align: right;
+    margin-right: 10px;
+}
+a[href$=".txt"].link-icon:after,
+a.link-icon.link-text[href]:after {
+    content: "\f0f6"; /*Text*/
+}
+a[href$=".pdf"].link-icon:after,
+a.link-icon.link-pdf[href]:after {
+    content: "\f1c1"; /*PDF*/
+  color: red;
+}
+
+a.link-icon.link-jira[href]:after {
+  content: "\f7b1";
+}
+
+a[href$=".doc"].link-icon:after,
+a[href$=".docx"].link-icon:after,
+a.link-icon.link-word[href]:after {
+    content: "\f1c2"; /*Word*/
+}
+a[href$=".xls"].link-icon:after,
+a[href$=".xlsx"].link-icon:after,
+a.link-icon.link-excel[href]:after {
+    content: "\f1c3"; /*Excel*/
+    color: green;
+}
+a[href$=".ppt"].link-icon:after,
+a[href$=".pptx"].link-icon:after,
+a.link-icon.link-powerpoint[href]:after {
+    content: "\f1c4"; /*Powerpoint*/
+}
+a[href$=".gif"].link-icon:after,
+a[href$=".jpg"].link-icon:after,
+a[href$=".jpeg"].link-icon:after,
+a[href$=".png"].link-icon:after,
+a[href$=".bmp"].link-icon:after,
+a[href$=".tif"].link-icon:after,
+a.link-icon.link-image[href]:after {
+    content: "\f1c5"; /*Image*/
+}
+a[href$=".zip"].link-icon:after,
+a[href$=".zipx"].link-icon:after,
+a[href$=".rar"].link-icon:after,
+a[href$=".tar"].link-icon:after,
+a[href$=".gz"].link-icon:after,
+a[href$=".dmg"].link-icon:after,
+a[href$=".iso"].link-icon:after,
+a.link-icon.link-archive[href]:after {
+    content: "\f1c6"; /*Archive*/
+}
+a[href$=".wav"].link-icon:after,
+a[href$=".mp3"].link-icon:after,
+a[href$=".fla"].link-icon:after,
+a[href$=".flac"].link-icon:after,
+a[href$=".ra"].link-icon:after,
+a[href$=".rma"].link-icon:after,
+a[href$=".aif"].link-icon:after,
+a[href$=".aiff"].link-icon:after,
+a[href$=".aa"].link-icon:after,
+a[href$=".aac"].link-icon:after,
+a[href$=".aax"].link-icon:after,
+a[href$=".ac3"].link-icon:after,
+a[href$=".au"].link-icon:after,
+a[href$=".ogg"].link-icon:after,
+a[href$=".avr"].link-icon:after,
+a[href$=".3ga"].link-icon:after,
+a[href$=".flac"].link-icon:after,
+a[href$=".mid"].link-icon:after,
+a[href$=".midi"].link-icon:after,
+a[href$=".m4a"].link-icon:after,
+a[href$=".mp4a"].link-icon:after,
+a[href$=".amz"].link-icon:after,
+a[href$=".mka"].link-icon:after,
+a[href$=".asx"].link-icon:after,
+a[href$=".pcm"].link-icon:after,
+a[href$=".m3u"].link-icon:after,
+a[href$=".wma"].link-icon:after,
+a[href$=".xwma"].link-icon:after,
+a.link-icon.link-audio[href]:after {
+    content: "\f1c7"; /*Audio*/
+}
+a[href$=".avi"].link-icon:after,
+a[href$=".mpg"].link-icon:after,
+a[href$=".mp4"].link-icon:after,
+a[href$=".mkv"].link-icon:after,
+a[href$=".mov"].link-icon:after,
+a[href$=".wmv"].link-icon:after,
+a[href$=".vp6"].link-icon:after,
+a[href$=".264"].link-icon:after,
+a[href$=".vid"].link-icon:after,
+a[href$=".rv"].link-icon:after,
+a[href$=".webm"].link-icon:after,
+a[href$=".swf"].link-icon:after,
+a[href$=".h264"].link-icon:after,
+a[href$=".flv"].link-icon:after,
+a[href$=".mk3d"].link-icon:after,
+a[href$=".gifv"].link-icon:after,
+a[href$=".oggv"].link-icon:after,
+a[href$=".3gp"].link-icon:after,
+a[href$=".m4v"].link-icon:after,
+a[href$=".movie"].link-icon:after,
+a[href$=".divx"].link-icon:after,
+a.link-icon.link-video[href]:after {
+    content: "\f1c8"; /*Video*/
+}
+a[href$=".css"].link-icon:after,
+a[href$=".js"].link-icon:after,
+a[href$=".py"].link-icon:after,
+a[href$=".git"].link-icon:after,
+a[href$=".py"].link-icon:after,
+a[href$=".cpp"].link-icon:after,
+a[href$=".h"].link-icon:after,
+a[href$=".ini"].link-icon:after,
+a[href$=".config"].link-icon:after,
+a.link-icon.link-code[href]:after {
+    content: "\f1c9"; /*code*/
+}
+a[href$=".exe"].link-icon:after,
+a[href$=".jar"].link-icon:after,
+a[href$=".dll"].link-icon:after,
+a[href$=".bat"].link-icon:after,
+a[href$=".pl"].link-icon:after,
+a[href$=".scr"].link-icon:after,
+a[href$=".msi"].link-icon:after,
+a[href$=".app"].link-icon:after,
+a[href$=".deb"].link-icon:after,
+a[href$=".apk"].link-icon:after,
+a[href$=".jar"].link-icon:after,
+a[href$=".vb"].link-icon:after,
+a[href$=".prg"].link-icon:after,
+a[href$=".sh"].link-icon:after,
+a.link-icon.link-exe[href]:after {
+    content: "\f085"; /*Executable*/
+}
+
+a[href$=".com"].link-icon:after,
+a[href$=".net"].link-icon:after,
+a[href$=".org"].link-icon:after,
+a[href$=".edu"].link-icon:after,
+a[href$=".gov"].link-icon:after,
+a[href$=".mil"].link-icon:after,
+a[href$="/"].link-icon:after,
+a[href$=".html"].link-icon:after,
+a[href$=".htm"].link-icon:after,
+a[href$=".xhtml"].link-icon:after,
+a[href$=".jhtml"].link-icon:after,
+a[href$=".php"].link-icon:after,
+a[href$=".php3"].link-icon:after,
+a[href$=".php4"].link-icon:after,
+a[href$=".php5"].link-icon:after,
+a[href$=".phtml"].link-icon:after,
+a[href$=".asp"].link-icon:after,
+a[href$=".aspx"].link-icon:after,
+a[href$=".cfm"].link-icon:after,
+a[href*="?"].link-icon:after,
+a[href*="#"].link-icon:after,
+a.link-icon:not([href*='.']):after,
+a.link-icon.link[href]:after {
+    content: "\f0c1"; /*link*/
+}
+
+
+a.link-azure:after,
+a.link-confluence:after,
+a.link-lucid:after,
+a.link-teams:after {
+  margin-left: 4px;
+}
+
+a.link-azure:after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 92 92'%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath d='M0 .113h91.887V92H0Zm0 0'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23a)'%3E%3Cpath style='stroke:none%3Bfill-rule:nonzero%3Bfill:%23f03c2e%3Bfill-opacity:1' d='M90.156 41.965 50.036 1.848a5.918 5.918 0 0 0-8.372 0l-8.328 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.034 7.034 0 0 1 1.669 7.277l10.187 10.184a7.028 7.028 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.05 7.05 0 0 1-9.965 0 7.044 7.044 0 0 1-1.528-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.06 7.06 0 0 1 2.304-1.539V33.926a7.049 7.049 0 0 1-3.82-9.234L29.242 14.272 1.73 41.777a5.925 5.925 0 0 0 0 8.371L41.852 90.27a5.925 5.925 0 0 0 8.37 0l39.934-39.934a5.925 5.925 0 0 0 0-8.371'/%3E%3C/g%3E%3C/svg%3E");
+}
+a.link-confluence:after {
+  content: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' height='16' width='16' xmlns='http://www.w3.org/2000/svg' focusable='false' aria-hidden='true'%3E%3Cdefs%3E%3ClinearGradient x1='60.6779047%25' y1='137.626433%25' x2='14.341981%25' y2='112.08042%25' id='uid2-1'%3E%3Cstop stop-color='%230052CC' offset='0%25'%3E%3C/stop%3E%3Cstop stop-color='%232684FF' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3ClinearGradient x1='12.3282701%25' y1='-53.9760846%25' x2='74.1300776%25' y2='-33.2553066%25' id='uid2-2'%3E%3Cstop stop-color='%230052CC' offset='0%25'%3E%3C/stop%3E%3Cstop stop-color='%232684FF' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cg stroke='none' stroke-width='1' fill-rule='nonzero'%3E%3Cpath fill='url(%23uid2-1)' d='M5.21454927,22.0245336 C4.97082816,22.4219865 4.69711061,22.8831818 4.46463817,23.2506383 C4.25655728,23.602269 4.36826343,24.0557627 4.71585838,24.2705174 L9.59028054,27.2701618 C9.76138278,27.3758032 9.96774369,27.4083016 10.1630326,27.3603607 C10.3583215,27.3124197 10.5261749,27.1880564 10.6289074,27.015192 C10.8238843,26.6889807 11.0751045,26.2652809 11.3488221,25.8115847 C13.2798432,22.6244625 15.2221129,23.0144163 18.7241978,24.686718 L23.5573748,26.9851956 C23.7404243,27.0723219 23.9509502,27.0816253 24.1409716,27.0109854 C24.3309931,26.9403455 24.4843191,26.7957811 24.5660052,26.61024 L26.8869801,21.3608623 C27.0509607,20.9859459 26.8841076,20.5487907 26.5120245,20.3784788 C25.4921454,19.8985357 23.4636359,18.942399 21.6376024,18.0612535 C15.0683811,14.8741313 9.48529299,15.0841064 5.21454927,22.0245336 Z'%3E%3C/path%3E%3Cpath fill='url(%23uid2-2)' d='M27.0752616,9.74267061 C27.3190367,9.34512979 27.5928148,8.88383241 27.8253387,8.51629467 C28.0334656,8.1645861 27.9217347,7.71099215 27.5740629,7.4961899 L22.6985622,4.49588177 C22.5250856,4.3802891 22.3113292,4.3421035 22.1085604,4.39048341 C21.9057917,4.43886333 21.7323024,4.56944439 21.6297024,4.75090796 C21.4346824,5.07719147 21.1834066,5.50098499 20.9096284,5.9547816 C18.9781801,9.14260899 17.0354806,8.75256893 13.5326208,7.07989715 L8.71337588,4.78466143 C8.53028584,4.69751579 8.31971336,4.68821035 8.1296499,4.75886591 C7.93958645,4.82952147 7.78622651,4.97411777 7.70452227,5.15969994 L5.38303386,10.4102392 C5.21901692,10.7852385 5.38590698,11.2224905 5.75807237,11.3928401 C6.77817714,11.8728894 8.80713551,12.8292376 10.6335731,13.7105781 C17.2192494,16.8946551 22.8035729,16.6846336 27.0752616,9.74267061 Z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+a.link-lucid:after {
+  content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 17.751L11.996 23l.002-2.624-6.749-3.938.001-7.874L3 7.254V17.75z' fill='%23F96B13'%3E%3C/path%3E%3Cpath d='M5.25 8.564L7.5 7.252l-2.25-1.31-2.249 1.312 2.25 1.31z' fill='%23FFCA73'%3E%3C/path%3E%3Cpath d='M11.996 23l2.25-1.313.003-2.621-2.25 1.31L11.995 23z' fill='%23CC4E00'%3E%3C/path%3E%3Cpath d='M11.998 20.376l2.25-1.31-6.752-3.937-2.247 1.31 6.75 3.937z' fill='%23FFCA73'%3E%3C/path%3E%3Cpath d='M5.249 16.44l2.249-1.312.001-7.875L5.25 8.565l-.001 7.875z' fill='%23CC4E00'%3E%3C/path%3E%3Cpath d='M18.75 8.56L21 7.25 12.002 2 9.754 3.312l8.996 5.249z' fill='%23FFCA73'%3E%3C/path%3E%3Cpath d='M9.753 5.938l6.748 3.935v7.877l2.25 1.31-.001-10.5-8.996-5.248-.001 2.626z' fill='%23F96B13'%3E%3C/path%3E%3Cpath d='M18.75 19.06L21 17.748 20.998 7.25 18.75 8.561v10.5z' fill='%23CC4E00'%3E%3C/path%3E%3C/svg%3E");
+}
+a.link-teams:after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2228.833 2073.333' height='16' width='16'%3E%3Cpath fill='%235059C9' d='M1554.637 777.5h575.713c54.391 0 98.483 44.092 98.483 98.483c0 0 0 0 0 0v524.398c0 199.901-162.051 361.952-361.952 361.952h0h-1.711c-199.901 0.028-361.975-162-362.004-361.901c0-0.017 0-0.034 0-0.052V828.971C1503.167 800.544 1526.211 777.5 1554.637 777.5L1554.637 777.5z'/%3E%3Ccircle fill='%235059C9' cx='1943.75' cy='440.583' r='233.25'/%3E%3Ccircle fill='%237B83EB' cx='1218.083' cy='336.917' r='336.917'/%3E%3Cpath fill='%237B83EB' d='M1667.323 777.5H717.01c-53.743 1.33-96.257 45.931-95.01 99.676v598.105c-7.505 322.519 247.657 590.16 570.167 598.053c322.51-7.893 577.671-275.534 570.167-598.053V877.176C1763.579 823.431 1721.066 778.83 1667.323 777.5z'/%3E%3Cpath opacity='.1' d='M1244 777.5v838.145c-0.258 38.435-23.549 72.964-59.09 87.598c-11.316 4.787-23.478 7.254-35.765 7.257H667.613c-6.738-17.105-12.958-34.21-18.142-51.833c-18.144-59.477-27.402-121.307-27.472-183.49V877.02c-1.246-53.659 41.198-98.19 94.855-99.52H1244z'/%3E%3Cpath opacity='.2' d='M1192.167 777.5v889.978c-0.002 12.287-2.47 24.449-7.257 35.765c-14.634 35.541-49.163 58.833-87.598 59.09H691.975c-8.812-17.105-17.105-34.21-24.362-51.833c-7.257-17.623-12.958-34.21-18.142-51.833c-18.144-59.476-27.402-121.307-27.472-183.49V877.02c-1.246-53.659 41.198-98.19 94.855-99.52H1192.167z'/%3E%3Cpath opacity='.2' d='M1192.167 777.5v786.312c-0.395 52.223-42.632 94.46-94.855 94.855h-447.84c-18.144-59.476-27.402-121.307-27.472-183.49V877.02c-1.246-53.659 41.198-98.19 94.855-99.52H1192.167z'/%3E%3Cpath opacity='.2' d='M1140.333 777.5v786.312c-0.395 52.223-42.632 94.46-94.855 94.855H649.472c-18.144-59.476-27.402-121.307-27.472-183.49V877.02c-1.246-53.659 41.198-98.19 94.855-99.52H1140.333z'/%3E%3Cpath opacity='.1' d='M1244 509.522v163.275c-8.812 0.518-17.105 1.037-25.917 1.037c-8.812 0-17.105-0.518-25.917-1.037c-17.496-1.161-34.848-3.937-51.833-8.293c-104.963-24.857-191.679-98.469-233.25-198.003c-7.153-16.715-12.706-34.071-16.587-51.833h258.648C1201.449 414.866 1243.801 457.217 1244 509.522z'/%3E%3Cpath opacity='.2' d='M1192.167 561.355v111.442c-17.496-1.161-34.848-3.937-51.833-8.293c-104.963-24.857-191.679-98.469-233.25-198.003h190.228C1149.616 466.699 1191.968 509.051 1192.167 561.355z'/%3E%3Cpath opacity='.2' d='M1192.167 561.355v111.442c-17.496-1.161-34.848-3.937-51.833-8.293c-104.963-24.857-191.679-98.469-233.25-198.003h190.228C1149.616 466.699 1191.968 509.051 1192.167 561.355z'/%3E%3Cpath opacity='.2' d='M1140.333 561.355v103.148c-104.963-24.857-191.679-98.469-233.25-198.003h138.395C1097.783 466.699 1140.134 509.051 1140.333 561.355z'/%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='198.099' y1='1683.0726' x2='942.2344' y2='394.2607' gradientTransform='matrix(1 0 0 -1 0 2075.3333)'%3E%3Cstop offset='0' stop-color='%235a62c3'/%3E%3Cstop offset='.5' stop-color='%234d55bd'/%3E%3Cstop offset='1' stop-color='%233940ab'/%3E%3C/linearGradient%3E%3Cpath fill='url(%23a)' d='M95.01 466.5h950.312c52.473 0 95.01 42.538 95.01 95.01v950.312c0 52.473-42.538 95.01-95.01 95.01H95.01c-52.473 0-95.01-42.538-95.01-95.01V561.51C0 509.038 42.538 466.5 95.01 466.5z'/%3E%3Cpath fill='%23FFF' d='M820.211 828.193H630.241v517.297H509.211V828.193H320.123V727.844h500.088V828.193z'/%3E%3C/svg%3E");
+}
+
+/* ------------------------------------------ */
+/* Project cards */
+cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+}
+
+tag {
+  background-color: #fff;
+  border-radius: 20px;
+  float: right;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 4px;
+  padding: 4px 12px;
+}
+
+card {
+  background-color: #ccc;
+  border-radius: 30px;
+  font-family: DM Sans;
+  margin: 8px;
+  padding: 16px;
+  
+}
+  header {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    padding-bottom: 16px;
+  }
+
+  footer {
+    border-top: 1px solid #fff;
+    margin-top: 8px;
+    padding-top: 16px;
+  }
+
+  title {
+    display: block;
+    font-weight: 800;
+    margin-top: .5rem;
+    text-align: center;
+  }
+
+.content ul, .content ul {margin-left: 1rem; padding-left: 0;}
+
+card.planning {background-color: var(--green-100);}
+card.planning status {background-color: var(--green-500);}
+card.planning title, card.planning tag {color: var(--green-700);}
+
+card.development {background-color: var(--blue-100);}
+card.development status {background-color: var(--blue-500);}
+card.development title, card.development tag {color: var(--blue-700);}
+
+card.deployment {background-color: var(--teal-100);}
+card.deployment status {background-color: var(--teal-500);}
+card.deployment title, card.deployment tag {color: var(--teal-700);}
+
+card.maintenance {background-color: var(--gray-100);}
+card.maintenance status {background-color: var(--gray-500);}
+card.maintenance title, card.maintenance tag {color: var(--gray-700);}
